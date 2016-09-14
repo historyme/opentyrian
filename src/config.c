@@ -30,7 +30,11 @@
 #include "video.h"
 #include "video_scale.h"
 
+#ifdef _WIN32
+#include <windows.h>
+#else
 #include <unistd.h>
+#endif
 #include <sys/stat.h>
 
 

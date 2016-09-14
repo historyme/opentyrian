@@ -24,6 +24,11 @@
 #include "palette.h"
 #include "player.h"
 #include "sprite.h"
+#ifdef _WIN32
+#define inline __inline
+#define snprintf _snprintf
+#endif
+
 
 extern bool button[4]; // fire, left fire, right fire, mode swap
 

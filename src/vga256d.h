@@ -19,6 +19,8 @@
 #ifndef VGA256D_H
 #define VGA256D_H
 
+#define inline __inline
+
 #include "opentyr.h"
 
 void JE_pix( SDL_Surface *surface, int x, int y, JE_byte c );

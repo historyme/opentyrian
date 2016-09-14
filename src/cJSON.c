@@ -35,6 +35,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#ifdef _WIN32
+#define inline __inline
+#define snprintf _snprintf
+#endif
 
 static void *(*cJSON_malloc)( size_t ) = malloc;
 static void *(*cJSON_realloc)( void *, size_t ) = realloc;

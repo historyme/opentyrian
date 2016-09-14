@@ -21,6 +21,11 @@
 
 #include "helptext.h"
 #include "opentyr.h"
+#ifdef _WIN32
+#define inline __inline
+#define snprintf _snprintf
+#endif
+
 
 typedef JE_byte JE_MenuChoiceType[MAX_MENU];
 

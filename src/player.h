@@ -22,6 +22,8 @@
 #include "config.h"
 #include "opentyr.h"
 
+#define inline __inline
+
 enum
 {
 	FRONT_WEAPON = 0,

@@ -1967,8 +1967,8 @@ void JE_sort( void )
 
 void JE_playCredits( void )
 {
-	const int lines_max = 132;
-	const int line_max_length = 65;
+#define  lines_max 132
+#define line_max_length 65
 	
 	char credstr[lines_max][line_max_length + 1];
 	

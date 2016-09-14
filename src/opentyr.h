@@ -19,9 +19,13 @@
 #ifndef OPENTYR_H
 #define OPENTYR_H
 
-#include "SDL_types.h"
+#include <SDL\SDL_types.h>
 #include <math.h>
 #include <stdbool.h>
+#ifdef _WIN32
+#define inline __inline
+#define snprintf _snprintf
+#endif
 
 #define COUNTOF(x) ((unsigned)(sizeof(x) / sizeof *(x)))  // use only on arrays!
 #define MIN(a, b) ((a) < (b) ? (a) : (b))

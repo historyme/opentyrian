@@ -1,6 +1,8 @@
 #ifndef __FMOPL_H_
 #define __FMOPL_H_
 
+#define inline __inline
+
 /* --- select emulation chips --- */
 #define BUILD_YM3812 1 /* (HAS_YM3812) */
 #define BUILD_YM3526 (HAS_YM3526)

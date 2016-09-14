@@ -21,7 +21,12 @@
 
 #include "opentyr.h"
 
-#include "SDL.h"
+#include <SDL\SDL.h>
+#ifdef _WIN32
+#define inline __inline
+#define snprintf _snprintf
+#endif
+
 
 typedef enum
 {

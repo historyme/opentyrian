@@ -20,6 +20,10 @@
 #define JUKEBOX_H
 
 #include "opentyr.h"
+#ifdef _WIN32
+#define inline __inline
+#define snprintf _snprintf
+#endif
 
 void jukebox( void );
 

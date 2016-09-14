@@ -24,6 +24,11 @@
 #include "varz.h"
 #include "helptext.h"
 
+#ifdef _WIN32
+#define inline __inline
+#define snprintf _snprintf
+#endif
+
 void intro_logos( void );
 
 typedef struct

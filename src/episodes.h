@@ -23,6 +23,10 @@
 
 #include "lvlmast.h"
 
+#ifdef _WIN32
+#define inline __inline
+#define snprintf _snprintf
+#endif
 
 /* Episodes and general data */
 

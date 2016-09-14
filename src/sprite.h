@@ -21,8 +21,10 @@
 
 #include "opentyr.h"
 
-#include "SDL.h"
+#include <SDL\SDL.h>
 #include <assert.h>
+
+#define inline __inline
 
 #define FONT_SHAPES       0
 #define SMALL_FONT_SHAPES 1

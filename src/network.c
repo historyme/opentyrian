@@ -30,8 +30,8 @@
 #include "varz.h"
 #include "video.h"
 
-#include "SDL.h"
-#include "SDL_net.h"
+#include <SDL\SDL.h>
+#include <SDL\SDL_net.h>
 
 #include <assert.h>
 
